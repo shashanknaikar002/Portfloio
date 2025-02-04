@@ -5,7 +5,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 
 RUN apk add --no-cache git && \
-    git clone <Add your repository url here> /temp-repo && \
+    git clone https://github.com/shashanknaikar002/Portfloio /temp-repo && \
     cp -r /temp-repo/*. && \
     rm -rf /temp-repo
     
